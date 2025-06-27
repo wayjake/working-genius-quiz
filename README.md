@@ -1,109 +1,162 @@
-# Welcome to React Router + Cloudflare Workers!
+# 🧠 Working Genius Quiz
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/react-router-starter-template)
+[![React](https://img.shields.io/badge/React-18.0.0-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-blue.svg)](https://tailwindcss.com/)
 
-![React Router Starter Template Preview](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/bfdc2f85-e5c9-4c92-128b-3a6711249800/public)
+An interactive web application that helps you discover your **Working Genius** types using Patrick Lencioni's WIDGET framework. This quiz identifies your natural talents and working preferences to improve team collaboration and personal effectiveness.
 
-<!-- dash-content-start -->
+![Working Genius Quiz Preview](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Working+Genius+Quiz)
 
-A modern, production-ready template for building full-stack React applications using [React Router](https://reactrouter.com/) and the [Cloudflare Vite plugin](https://developers.cloudflare.com/workers/vite-plugin/).
+## 🌟 What is Working Genius?
 
-## Features
+The **6 Types of Working Genius** is a framework developed by Patrick Lencioni that identifies six natural gifts people bring to the workplace. Understanding your working geniuses can transform how you work, lead teams, and collaborate with others.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+### The Six Types (WIDGET):
 
-<!-- dash-content-end -->
+- **🔍 Wonder (W)** - The natural gift of pondering possibilities and asking "what if" questions
+- **💡 Invention (I)** - The natural gift of creating original ideas and solutions from scratch  
+- **🎯 Discernment (D)** - The natural gift of intuitively evaluating ideas and situations
+- **🚀 Galvanizing (G)** - The natural gift of rallying and inspiring others to take action
+- **🤝 Enablement (E)** - The natural gift of providing encouragement and assistance
+- **🏁 Tenacity (T)** - The natural gift of pushing projects to completion and achieving results
 
-## Getting Started
+## ✨ Features
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+- **Interactive Quiz**: 18 carefully crafted questions to assess your working preferences
+- **Real-time Scoring**: Advanced algorithm using Root Mean Square (RMS) calculations
+- **Detailed Results**: Discover your top 2 Working Geniuses, competencies, and frustrations
+- **Beautiful UI**: Modern, responsive design with Tailwind CSS
+- **Developer Mode**: Quick testing with keyboard shortcuts
+- **TypeScript**: Fully typed for better development experience
 
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/react-router-starter-template
-```
+## 🚀 Getting Started
 
-A live public deployment of this template is available at [https://react-router-starter-template.templates.workers.dev](https://react-router-starter-template.templates.workers.dev)
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
 ### Installation
 
-Install the dependencies:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/working-genius-quiz.git
+   cd working-genius-quiz
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to start the quiz!
+
+### Building for Production
 
 ```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Typegen
-
-Generate types for your Cloudflare bindings in `wrangler.json`:
-
-```sh
-npm run typegen
-```
-
-## Building for Production
-
-Create a production build:
-
-```bash
+# Create a production build
 npm run build
-```
 
-## Previewing the Production Build
-
-Preview the production build locally:
-
-```bash
+# Preview the production build locally
 npm run preview
 ```
 
-## Deployment
+## 🎯 How to Use
 
-If you don't have a Cloudflare account, [create one here](https://dash.cloudflare.com/sign-up)! Go to your [Workers dashboard](https://dash.cloudflare.com/?to=%2F%3Aaccount%2Fworkers-and-pages) to see your [free custom Cloudflare Workers subdomain](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/) on `*.workers.dev`.
+1. **Take the Quiz**: Answer 18 questions about your work preferences using the slider scale (0-100)
+2. **Get Your Results**: Discover your:
+   - **Working Geniuses** (top 2) - Energizing activities that come naturally
+   - **Working Competencies** (middle 2) - Skills you can do well but don't energize you
+   - **Working Frustrations** (bottom 2) - Activities that drain or challenge you
+3. **Apply the Insights**: Use your results to:
+   - Choose projects that align with your geniuses
+   - Build teams with complementary working types
+   - Delegate tasks that fall into your frustrations
+   - Communicate your needs to colleagues
 
-Once that's done, you can build your app:
+## 🛠️ Development
 
-```sh
-npm run build
+### Project Structure
+
+```
+working-genius-quiz/
+├── app/
+│   ├── routes/
+│   │   └── home.tsx          # Main quiz component
+│   ├── app.css              # Global styles
+│   ├── root.tsx             # Root component
+│   └── routes.ts            # Route definitions
+├── public/                  # Static assets
+├── package.json             # Dependencies and scripts
+└── README.md               # This file
 ```
 
-And deploy it:
+### Key Technologies
 
-```sh
-npm run deploy
-```
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and dev server
 
-To deploy a preview URL:
+### Developer Features
 
-```sh
-npx wrangler versions upload
-```
+- **Hot Module Replacement (HMR)** - Instant updates during development
+- **TypeScript Support** - Full type checking and IntelliSense
+- **Developer Mode** - Press `CMD/CTRL + D` to enable quick testing features
 
-You can then promote a version to production after verification or roll it out progressively.
+## 📊 Understanding Your Results
 
-```sh
-npx wrangler versions deploy
-```
+### Working Geniuses (Top 2)
+These are activities that energize you and come naturally. You should seek out opportunities to use these gifts in your work.
 
-## Styling
+### Working Competencies (Middle 2)  
+You can perform these activities well, but they don't energize you. These are good for delegation or collaboration.
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+### Working Frustrations (Bottom 2)
+These activities drain your energy and may be challenging. Consider delegating these tasks or partnering with someone whose geniuses align with these areas.
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Use Tailwind CSS for styling
+- Write clear, descriptive commit messages
+- Test your changes thoroughly
+
+## 📚 Learn More
+
+- [The 6 Types of Working Genius](https://www.tablegroup.com/working-genius/) - Official website
+- [Patrick Lencioni's Books](https://www.tablegroup.com/books/) - Deep dive into the framework
+- [Team Assessment Tools](https://www.tablegroup.com/assessments/) - Additional resources
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Patrick Lencioni** for developing the Working Genius framework
+- **The Table Group** for their research and resources
+- **Font Awesome** for the inspiring blog post that helped inform this project
 
 ---
 
-Built with ❤️ using React Router.
+**Ready to discover your Working Genius?** 🚀
+
+Start the quiz and unlock insights that can transform your work and team collaboration!
