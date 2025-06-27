@@ -3,12 +3,21 @@
   "name": "working-genius-quiz",
   "main": "./workers/app.ts",
   "compatibility_date": "2025-04-01",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "observability": {
     "enabled": true
   },
   "upload_source_maps": true,
+  "routes": [
+    {
+      "pattern": "working-genius-quiz.4d2.io/*",
+      "zone_name": "4d2.io"
+    }
+  ],
   "vars": {
-    "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
+    "APP_NAME": "Working Genius Quiz",
+    "APP_DESCRIPTION": "Discover your Working Genius types with this interactive quiz"
   }
 }

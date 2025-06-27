@@ -1,13 +1,13 @@
 {
   "name": "working-genius-quiz",
-  "description": "Build a full-stack web application with React Router 7.",
+  "description": "An interactive web application that helps you discover your Working Genius types using Patrick Lencioni's WIDGET framework.",
   "cloudflare": {
-    "label": "React Router Framework Starter",
+    "label": "Working Genius Quiz",
     "products": [
       "Workers"
     ],
     "categories": [
-      "storage"
+      "productivity"
     ],
     "icon_urls": [
       "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/5ca0ca32-e897-4699-d4c1-6b680512f000/public"
